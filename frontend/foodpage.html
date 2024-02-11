@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pandeyji Food</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #d9534f;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 24px;
+      border-bottom: 5px solid #c9302c;
+    }
+
+    header h1 {
+      margin: 0;
+      cursor: pointer;
+      transition: color 0.5s ease-in-out;
+    }
+
+    header p {
+      margin: 0;
+      cursor: pointer;
+      transition: color 0.5s ease-in-out;
+    }
+
+    header h1:hover {
+      color: black !important;
+    }
+
+    header p:hover {
+      color: black;
+    }
+
+    section {
+      text-align: center;
+      padding: 10px;
+    }
+
+    section div {
+      display: inline-block;
+      text-align: left;
+      margin: 50px;
+      padding: 40px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    section div:hover {
+      transform: scale(1.05);
+    }
+
+    section img {
+      width: 250px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #d9534f;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      bottom: 0;
+      /*width: 100%;*/
+      font-size: 16px;
+      border-top: 5px solid #c9302c;
+    }
+    .chat-bot {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      border: none;
+      z-index: 1000; 
+    } 
+
+    .menu p{
+      font-style: inherit;
+      font-weight: bolder;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 3rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+    
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>A-TO-Z FOOD</h1>
+    <p>Contact: 123-456-7890 | Email: <span style="transition: color 0.3s ease-in-out;">info@pandeyjifood.com</span></p>
+  </header>
+  <section class="menu">
+    <p>OUR SPECIAL MENU LISTED BELOW</p>
+  </section>
+
+  <section>
+    <div>
+      <img src="samosa.jpg" alt="Samosa">
+      <p style="color: #d9534f; font-weight: bold;">Samosa - ₹10</p>
+    </div>
+    <div>
+      <img src="lassi.jpg" alt="Lassi">
+      <p style="color: #d9534f; font-weight: bold;">Lassi - ₹20</p>
+    </div>
+    <div>
+      <img src="pav_bhaji.jpg" alt="Pav Bhaji">
+      <p style="color: #d9534f; font-weight: bold;">Pav Bhaji - ₹50</p>
+    </div>
+    <div>
+      <img src="dosa.jpg" alt="Dosa">
+      <p style="color: #d9534f; font-weight: bold;">Dosa - ₹80</p>
+    </div>
+    <div>
+      <img src="vada_pav.jpg" alt="Vada Pav">
+      <p style="color: #d9534f; font-weight: bold;">Vada Pav - ₹15</p>
+    </div>
+    <div>
+      <img src="biryani.jpeg" alt="biryani">
+      <p style="color: #d9534f; font-weight: bold;">Biryani - ₹150</p>
+    </div>
+    <div>
+      <img src="pizza.jpg" alt="pizza">
+      <p style="color: #d9534f; font-weight: bold;">Pizza - ₹100</p>
+    </div>
+    <div>
+      <img src="chole.jpg" alt="chole">
+      <p style="color: #d9534f; font-weight: bold;">Chole Bhature - ₹45</p>
+    </div>
+    <iframe class="chat-bot"
+    allow="microphone;"
+    width="300"
+    height="500"
+    src="https://console.dialogflow.com/api-client/demo/embedded/893d2fc6-00ac-442c-a72e-02dd88114a82">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>Contact us: 123-456-7890 | Email: info@pandeyjifood.com</p>
+  </footer>
+  
+      
+
+</body>
+</html>
